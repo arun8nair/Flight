@@ -1,0 +1,143 @@
+move bg backwards
+endless bg spawning
+delete bg once behind
+bg till horizon
+player bounds
+obstacle spawning
+obstacle hitting ends game
+game over message in ui
+stop spawning course on game over 
+
+slight tilt on maneuvring - 
+	- figure out rotation in unity
+	- revisit the project design document
+	slerp the rotation
+	cap rotation at 60
+		- slerping and capping with angular vel
+		- quaternion.lookrotation
+		- rb.MoveRotation
+		- transform.rotate
+
+	bring the plane back to its original rotation after 
+	prevent snapping to opp extreme on change in direction - set slerp factor
+
+tilt feature
+	smoothen - currently jittery
+	tilt back to og pos on mouse up - how?
+		- mouse down enables tilt, on mouse up, tilt back
+		- in mobile, have two inputs, one for tilt, one for movement
+	clicking on different part of screen snaps object to different rotation
+dont spawn obstacles for first few tiles
+different types of obstacles
+
+fix movement jitter
+slightly rotate along the y axis also
+
+
+fix the snapping of plane tilt to different position on mouse click
+after manual tilt, auto tilt does not work
+
+refactor code and rename improper variables
+tilt controls restriction
+	- tilting in a direction: reduce sensitivity and add some delay/drag(response has to lag a bit)
+add game design to obstacles, increase difficulty
+	- replace obstacles with real assets
+	- vertical moving balloon, 
+	- sideways moving blimp, 
+	- stationary buildings, 
+	- rotating cranes
+	- birds moving in z axis 
+		- flock of birds move in v shape
+		- birds animation needs to be desyncd
+		- flock needs velocity
+
+speed up player gradually
+	- use same prefab for empty track and other
+	- calc and adjust the course generation accordingly
+	- instantiate track and increase speed at same time
+
+
+add background (parallax effect?)
+	- add different kinds of buildings
+	- spawn more buildings without overlap
+modify collider to fit the plane
+replace primitives
+snapping back to og pos on clicking while tilted - sometimes
+
+Game UI
+	- styling
+	- Restart 
+procedural building generation or randomized generation
+	- better textures or low poly versions of current buildings
+tighten the obstacles gap
+improve obstacle spawning distance and look
+	- add fog/fade in obstacles
+
+
+add a building obstacle at center of road
+rotate propeller
+add offset to the bird obstacles
+Cap the speed at max value
+IMPT!! fill the gaps between track pieces
+
+add road, move road down
+increase size of buildings so that only 1 building per track piece reqd
+change camera angle to improve perspective
+
+building colors 
+	- add colors to skyscrapers next
+birds need to move!!!!
+	- if player reaches within a min distance of birds, they may move randomly
+	- halo/force field effect around birds to improve visibility
+collision matrix for obstacles
+player physics / plane reacts to hitting obstacles
+adjust the probabilities of some obstacles - building
+Sound effects and music
+Score and high score
+
+make player move a certain distance, instead of continuous movement
+collectibles
+shaders or styling
+Mobile Version ( without tilt input/add tilt input)
+Options button in menu
+add cloud - clouds contain powerup
+Make code and editor more readable
+	- gameobjects in the scene can be seperated into sections
+	- descriptions for public fields
+if user stays in one place for too long, spawn an obstacle there
+layer culling can be used to make track invisible
+crane obstacle in under construction areas
+improve init speed or course speed change value
+improve game over response ui
+give controls UI help
+change inputs to serialize field privates
+store the high score
+dither fade?
+controls lag
+
+CORRECT TRACK GAPS
+SCORE COLOR
+HIGH SCORE
+VELOCITY adjustment
+DECREASE BLIMP SPEED
+SKYSCRAPER COLORS
+ADAPTIVE PERFORMANCE SETTINGS
+CURSOR INVIS
+plane sound loop correction
+
+light 030
+50 -30 0
+
+?I am a game programmer who is transitioning
+into game development from web development. 
+This website showcases some of my personal
+projects and games that I have built. I am 
+passionate about creating engaging and 
+immersive experiences for players. If you 
+are interested in working with me, please 
+feel free to contact me through the contact 
+page.Here, you will find a collection of my
+works, ranging from 2D platformers to 3D first
+-person shooters. I am always looking for new 
+ideas and challenges, so if you have a project
+in mind, let's discuss it!
